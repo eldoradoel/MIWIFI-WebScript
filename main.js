@@ -109,8 +109,8 @@ function showTotalSpeed(data) {
 	total.find('.down').html(uw.byteFormat(+data.wan.downspeed, 100) + "/S");
 	total.find('.maxup').html(uw.byteFormat(+data.wan.maxuploadspeed, 100) + "/S");
 	total.find('.maxdown').html(uw.byteFormat(+data.wan.maxdownloadspeed, 100) + "/S");
-	total.find('.totalup').html(uw.byteFormat(+data.wan.upload, 100) + "/S");
-	total.find('.totaldown').html(uw.byteFormat(+data.wan.download, 100) + "/S");
+	total.find('.totalup').html(uw.byteFormat(+data.wan.upload, 100));
+	total.find('.totaldown').html(uw.byteFormat(+data.wan.download, 100));
 }
 
 function refreshDeviceSpeed() {
